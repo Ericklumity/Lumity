@@ -56,14 +56,14 @@ button {
 /* LOGO */
 
 .logo {
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: var(--azul-marinho);
+    display: flex;
+    align-items: center;
 }
 
-.logo span {
-    color: var(--dourado);
+.logo img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* MENU */
