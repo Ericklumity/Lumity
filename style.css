@@ -165,3 +165,28 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
+/* =================================
+   EFEITO DOURADO NO MENU
+================================= */
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: var(--dourado);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
