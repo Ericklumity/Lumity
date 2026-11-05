@@ -107,8 +107,13 @@ button {
    BANNER PRINCIPAL
 ================================= */
 
+body {
+    overflow-x: hidden;
+}
+
 .hero-banner {
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
     background-color: var(--branco);
 }
@@ -116,6 +121,7 @@ button {
 .hero-banner img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
