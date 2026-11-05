@@ -103,9 +103,7 @@ button {
 }
 
 
-/* =================================
-   BANNER PRINCIPAL
-================================= */
+/* BANNER PRINCIPAL */
 
 body {
     overflow-x: hidden;
@@ -125,3 +123,4 @@ body {
     height: auto;
     object-fit: contain;
 }
+
