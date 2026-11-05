@@ -1,0 +1,41 @@
+
+/* =================================
+   LUMITY — IDENTIDADE VISUAL
+================================= */
+
+:root {
+    --branco: #FFFFFF;
+    --azul-marinho: #102A43;
+    --dourado: #D6A16D;
+    --off-white: #F5F3EF;
+    --grafite: #252B33;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--grafite);
+    font-family: Arial, sans-serif;
+}
+
+/* ELEMENTOS GERAIS */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
