@@ -124,3 +124,40 @@ body {
     object-fit: contain;
 }
 
+/* =================================
+   CORREÇÃO DE LARGURA DA PÁGINA
+================================= */
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    width: 100%;
+    max-width: 100%;
+}
+
+.hero-banner {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hero-banner img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
