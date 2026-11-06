@@ -243,10 +243,13 @@ main {
    SEÇÃO PRODUTOS
 ================================= */
 
+/* SEÇÃO DE PRODUTOS */
+
 .produtos {
     width: 100%;
-    padding: 100px 7%;
+    padding: 100px 5%;
     background-color: var(--branco);
+    box-sizing: border-box;
 }
 
 .produtos-cabecalho {
@@ -276,10 +279,12 @@ main {
 
 .produtos-lista {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* =================================
@@ -409,5 +414,126 @@ main {
 
     .carrinho-conteudo {
         grid-template-columns: 1fr;
+    }
+}
+
+/* =================================
+   CARTÕES DE PRODUTOS - LUMITY
+================================= */
+
+/* LISTA DE PRODUTOS */
+
+.produtos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* CARTÃO */
+
+.produto-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    background-color: var(--branco);
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(16, 42, 67, 0.08);
+}
+
+/* IMAGEM */
+
+.produto-imagem {
+    width: 100%;
+    height: 300px;
+    background-color: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: 0.4s ease;
+}
+
+.produto-card:hover .produto-imagem img {
+    transform: scale(1.04);
+}
+
+/* INFORMAÇÕES */
+
+.produto-informacoes {
+    padding: 22px;
+}
+
+.produto-informacoes h3 {
+    color: var(--azul-marinho);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.produto-preco {
+    color: var(--grafite);
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* BOTÃO */
+
+.adicionar-carrinho {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: 1px solid var(--azul-marinho);
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.adicionar-carrinho:hover {
+    background-color: var(--dourado);
+    border-color: var(--dourado);
+    color: var(--branco);
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+    .produtos-lista {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 550px) {
+    .produtos-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .produto-imagem {
+        height: 260px;
     }
 }
