@@ -32,7 +32,7 @@
 <div class="header-icons">
     <button aria-label="Pesquisar">⌕</button>
 
-    <button class="cart-button" aria-label="Carrinho de compras">
+    <button class="cart-button" id="abrir-carrinho" aria-label="Carrinho de compras">
         <svg xmlns="http://www.w3.org/2000/svg"
      width="23" height="23"
      viewBox="0 0 24 24"
@@ -101,6 +101,39 @@
     </div>
 </section>
   </main>
+
+<!-- CARRINHO DE COMPRAS -->
+<div class="carrinho-fundo" id="carrinho-fundo">
+
+    <div class="carrinho-painel">
+
+        <div class="carrinho-topo">
+            <h2>Meu carrinho</h2>
+            <button id="fechar-carrinho" aria-label="Fechar carrinho">
+                ×
+            </button>
+        </div>
+
+        <div id="carrinho-itens">
+            <p class="carrinho-vazio">
+                Seu carrinho está vazio.
+            </p>
+        </div>
+
+        <div class="carrinho-rodape">
+            <div class="carrinho-total">
+                <span>Total:</span>
+                <strong id="carrinho-total">R$ 0,00</strong>
+            </div>
+
+            <button id="finalizar-pedido">
+                Finalizar pelo WhatsApp
+            </button>
+        </div>
+
+    </div>
+
+</div>
 
 
 </body>
