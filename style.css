@@ -199,3 +199,41 @@ img {
 main {
     padding-top: 90px;
 }
+
+
+/* =================================
+   SEÇÃO SOBRE NÓS
+================================= */
+
+.sobre {
+    width: 100%;
+    padding: 100px 10%;
+    background-color: var(--off-white);
+    text-align: center;
+}
+
+.sobre-conteudo {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.sobre-detalhe {
+    display: inline-block;
+    color: var(--dourado);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.sobre h2 {
+    color: var(--azul-marinho);
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    color: var(--grafite);
+    font-size: 16px;
+    line-height: 1.8;
+}
